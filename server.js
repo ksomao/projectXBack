@@ -14,7 +14,7 @@ const dbRoute = "mongodmongodb://solid:b6Hk4UgaWLenEBf@ds149732.mlab.com:49732/a
 // connects our back end code with the database
 mongoose.connect(
     dbRoute,
-    {useNewUrlParser: true, useCreateIndex: true}
+    {useNewUrlParser: true}
 );
 
 let db = mongoose.connection;
@@ -42,21 +42,24 @@ router.get("/getData", (req, res) => {
            loc: {$near: ["4.34639", "50.88049"]}
        }).limit(1).exec();*/
 
-    const coords = {type: 'Point', coordinates: [4.34639, 50.88049]};
+    const coords = {type: 'Point', coordinates: [4.371364199999999, 50.83472750000001]};
 
-    address.find({
+    /*address.find({
         location: {
             $near: {
-                $maxDistance: 10000,
                 $geometry: {
                     type: "Point",
-                    coordinates: [4.34639, 50.88049]
+                    coordinates: [4.371364199999999, 50.83472750000001]
                 }
             }
         }
     }).find((error, results) => {
         if (error) console.log("my error",error);
         console.log("res",JSON.stringify(results));
+    });*/
+
+    address.find({loc: {$near: [4.371364199999999, 50.83472750000001], $maxDistance: 2000}}, function (err, result) {
+        console.log(result);
     });
 });
 
