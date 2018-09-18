@@ -11,12 +11,14 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@turf/buffer": "^5.1.5",
+    "@turf/helpers": "^6.1.4",
     "babel-cli": "^6.26.0",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "body-parser": "^1.18.3",
     "express": "^4.16.3",
-    "mongoose": "^5.2.8",
+    "mongoose": "^5.2.15",
     "morgan": "^1.9.1",
     "nodemon": "^1.18.4"
   }

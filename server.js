@@ -3,6 +3,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const logger = require("morgan");
 import address from "./data"
+import {point, featureCollection} from '@turf/helpers'
 
 const API_PORT = 3001;
 const app = express();
@@ -32,36 +33,50 @@ app.use(logger("dev"));
 
 // this is our get method
 // this method fetches all available data in our database
-router.get("/getData", (req, res) => {
+router.get("/getData", async (req, res) => {
     /*address.find({}).limit(1).exec((err, data) => {
         if (err) return res.json({success: false, error: err});
         return res.json({success: true, data});
     });*/
 
-    /*   let closestQuery = address.find({
-           loc: {$near: ["4.34639", "50.88049"]}
-       }).limit(1).exec();*/
-
-    const coords = {type: 'Point', coordinates: [4.371364199999999, 50.83472750000001]};
-
-    /*address.find({
-        location: {
-            $near: {
-                $geometry: {
-                    type: "Point",
-                    coordinates: [4.371364199999999, 50.83472750000001]
+    address.collection.find(
+        {
+            "geometry": {
+                "$nearSphere": {
+                    "$geometry": {
+                        "type": "Point",
+                        "coordinates": [4.376817, 50.8258182]
+                    }
                 }
             }
-        }
-    }).find((error, results) => {
-        if (error) console.log("my error",error);
-        console.log("res",JSON.stringify(results));
-    });*/
+        },
+        {
+            "skip": 0, "limit": 2
+        },
+        function (err, cursor) {
 
-    address.find({loc: {$near: [4.371364199999999, 50.83472750000001], $maxDistance: 2000}}, function (err, result) {
-        console.log(result);
-    });
-});
+
+            console.log(cursor)
+            cursor.toArray(function (err, shapes) {
+
+                console.log(shapes);
+            });
+
+        });
+
+
+    /*  address.find({})
+          .exec((err, data) => {
+              if (err) return res.json({success: false, error: err});
+
+
+
+              return res.json({success: true, data});
+          });*/
+
+
+})
+;
 
 // this is our update method
 // this method overwrites existing data in our database

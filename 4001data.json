@@ -1,0 +1,191 @@
+[
+  {
+    "A": "4159",
+    "B": "1",
+    "C": "5",
+    "nom": "Aabida Mimount",
+    "adresse": "Rue Goffart",
+    "num": "44",
+    "boite": "002e",
+    "code": "1050",
+    "commune": "Ixelles",
+    "full_address": "Rue Goffart 44 1050 Ixelles",
+    "Latitude": "50.83472750000001",
+    "Longitude": "4.371364199999999",
+    "M": "19460717",
+    "S": "F",
+    "location": {
+      "__type": "GeoPoint",
+      "latitude": 50.83472750000001,
+      "longitude": 4.371364199999999
+    }
+  },
+  {
+    "A": "5156",
+    "B": "1",
+    "C": "7",
+    "nom": "Aâdmi Khadija",
+    "adresse": "Rue Jean Van Volsem",
+    "num": "27",
+    "boite": "002e",
+    "code": "1050",
+    "commune": "Ixelles",
+    "full_address": "Rue Jean Van Volsem 27 1050 Ixelles",
+    "Latitude": "50.8304681",
+    "Longitude": "4.3707765",
+    "M": "19510001",
+    "S": "F",
+    "location": {
+      "__type": "GeoPoint",
+      "latitude": 50.8304681,
+      "longitude": 4.3707765
+    }
+  },
+  {
+    "A": "1765",
+    "B": "1",
+    "C": "3",
+    "nom": "Aadmi Mimount",
+    "adresse": "Rue du Conseil",
+    "num": "5",
+    "boite": "RC+1",
+    "code": "1050",
+    "commune": "Ixelles",
+    "full_address": "Rue du Conseil 5 1050 Ixelles",
+    "Latitude": "50.8334217",
+    "Longitude": "4.367598200000001",
+    "M": "19490000",
+    "S": "F",
+    "location": {
+      "__type": "GeoPoint",
+      "latitude": 50.8334217,
+      "longitude": 4.367598200000001
+    }
+  },
+  {
+    "A": "8633",
+    "B": "1",
+    "C": "11",
+    "nom": "Aadmi Myriam",
+    "adresse": "Rue Scarron",
+    "num": "21",
+    "boite": "RC00",
+    "code": "1050",
+    "commune": "Ixelles",
+    "full_address": "Rue Scarron 21 1050 Ixelles",
+    "Latitude": "50.8296206",
+    "Longitude": "4.371370199999999",
+    "M": "19980722",
+    "S": "F",
+    "location": {
+      "__type": "GeoPoint",
+      "latitude": 50.8296206,
+      "longitude": 4.371370199999999
+    }
+  },
+  {
+    "A": "19128",
+    "B": "2",
+    "C": "23",
+    "nom": "Aamir Tufail Butt Naïma",
+    "adresse": "Rue Jean Paquot",
+    "num": "31",
+    "boite": "RC",
+    "code": "1050",
+    "commune": "Ixelles",
+    "full_address": "Rue Jean Paquot 31 1050 Ixelles",
+    "Latitude": "50.8268005",
+    "Longitude": "4.3776241",
+    "M": "19971209",
+    "S": "F",
+    "location": {
+      "__type": "GeoPoint",
+      "latitude": 50.8268005,
+      "longitude": 4.3776241
+    }
+  },
+  {
+    "A": "1856",
+    "B": "1",
+    "C": "3",
+    "nom": "Aârab Ali",
+    "adresse": "Rue du Conseil",
+    "num": "43",
+    "boite": "SS00",
+    "code": "1050",
+    "commune": "Ixelles",
+    "full_address": "Rue du Conseil 43 1050 Ixelles",
+    "Latitude": "50.8341826",
+    "Longitude": "4.3690139",
+    "M": "19860925",
+    "S": "H",
+    "location": {
+      "__type": "GeoPoint",
+      "latitude": 50.8341826,
+      "longitude": 4.3690139
+    }
+  },
+  {
+    "A": "1852",
+    "B": "1",
+    "C": "3",
+    "nom": "Aarab Benaïssa",
+    "adresse": "Rue du Conseil",
+    "num": "43",
+    "boite": "1e",
+    "code": "1050",
+    "commune": "Ixelles",
+    "full_address": "Rue du Conseil 43 1050 Ixelles",
+    "Latitude": "50.8341826",
+    "Longitude": "4.3690139",
+    "M": "19790709",
+    "S": "H",
+    "location": {
+      "__type": "GeoPoint",
+      "latitude": 50.8341826,
+      "longitude": 4.3690139
+    }
+  },
+  {
+    "A": "3024",
+    "B": "1",
+    "C": "4",
+    "nom": "Aarab Fatima",
+    "adresse": "Rue Dillens",
+    "num": "20",
+    "boite": "M000",
+    "code": "1050",
+    "commune": "Ixelles",
+    "full_address": "Rue Dillens 20 1050 Ixelles",
+    "Latitude": "50.8294272",
+    "Longitude": "4.3736141",
+    "M": "19681112",
+    "S": "F",
+    "location": {
+      "__type": "GeoPoint",
+      "latitude": 50.8294272,
+      "longitude": 4.3736141
+    }
+  },
+  {
+    "A": "34910",
+    "B": "4",
+    "C": "44",
+    "nom": "Aarab Hafssa",
+    "adresse": "Rue des Hellènes",
+    "num": "49",
+    "boite": "RC",
+    "code": "1050",
+    "commune": "Ixelles",
+    "full_address": "Rue des Hellènes 49 1050 Ixelles",
+    "Latitude": "50.8156748",
+    "Longitude": "4.3879535",
+    "M": "19800524",
+    "S": "F",
+    "location": {
+      "__type": "GeoPoint",
+      "latitude": 50.8156748,
+      "longitude": 4.3879535
+    }
+  }
+]

@@ -1,6 +1,19 @@
 import mongoose from 'mongoose'
 
+mongoose.set('useCreateIndex', true)
 const Schema = mongoose.Schema
+
+const GeoSchema = new Schema({
+    type: {
+        type: String,
+        default: 'Point'
+    },
+    coordinates: {
+        type: [Number],
+        index: '2dsphere'
+    }
+});
+
 
 const addressSchema = new Schema({
     A: String,
@@ -18,11 +31,12 @@ const addressSchema = new Schema({
     status: String,
     M: String,
     S: String,
-    loc: {
-        type: {type: String},
+    geometry: {
+        type: {type: String, default: "Point"},
         coordinates: []
     }
 })
 
-addressSchema.index({location: "2dsphere"});
+addressSchema.index({location: "2dsphere"})
+
 export default mongoose.model("address", addressSchema, "address");
